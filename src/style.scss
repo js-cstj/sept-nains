@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#joyeux {
+    animation-name: aller;
+    animation-duration: 1000ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(.5, -1, .5, 2);
+    //box-shadow: 00 0 1em #000;
+}
+@keyframes aller {
+    0% {
+        transform: translate(0px, 0px) rotate(0);
+    }
+    100% {
+        transform: translate(60px, 30px) rotate(50deg);
+    }
+}
+
+@keyframes atchoum {
+    0% {
+        transform:translate(0px,0px) rotateY(0deg);
+    }
+    50% {
+        transform:translate(-150px,0px) rotateY(720deg);
+    }
+    100% {
+        transform:translate(0px,0px) rotateY(720deg);
+    }
+}
+
+body {
+    background-color: hsl(300, 100%, 30%);
+
+}
+#plateau {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: hsl(300, 100%, 90%);
+    margin: 0 auto;
+    overflow: hidden;
+    .texte {
+        font-size: 200px;
+        font-family: impact, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: hsl(300, 100%, 85%);
+        line-height: .9;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.nain {
+    position: absolute;
+    transition: .5s;
+}
+
+#atchoum {
+    left:10px;
+    top:420px;
+    // animation-name: atchoum;
+    animation-duration: 1s;
+}
+#dormeur {
+    left:220px;
+    top:250px
+}
+#grincheux {
+    left:450px;
+    top:430px
+}
+#joyeux {
+    left:50px;
+    top:160px
+}
+#prof {
+    left:230px;
+    top:20px
+}
+#simplet {
+    left:170px;
+    top:440px
+}
+#timide {
+    left:420px;
+    top:160px
+}
