@@ -15,8 +15,7 @@ body {
     animation-iteration-count: infinite;
     animation-play-state: paused;
     animation-timing-function: ease-in-out;
-    animation-timing-function: cubic-bezier(.5, -1, .5, 2);
-    //box-shadow: 00 0 1em #000;
+    // animation-timing-function: cubic-bezier(.5, -1, .5, 2);
 }
 @keyframes aller {
     0% {
@@ -24,6 +23,16 @@ body {
     }
     100% {
         transform: translate(60px, 30px) rotate(50deg);
+    }
+}
+
+@keyframes sauter {
+    0% {
+        margin-top: 0;
+
+    }
+    100% {
+        margin-top: -1em;
     }
 }
 

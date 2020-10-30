@@ -29,8 +29,6 @@ body {
           animation-play-state: paused;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.5, -1, 0.5, 2);
-          animation-timing-function: cubic-bezier(0.5, -1, 0.5, 2);
 }
 
 @-webkit-keyframes aller {
@@ -52,6 +50,24 @@ body {
   100% {
     -webkit-transform: translate(60px, 30px) rotate(50deg);
             transform: translate(60px, 30px) rotate(50deg);
+  }
+}
+
+@-webkit-keyframes sauter {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -1em;
+  }
+}
+
+@keyframes sauter {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -1em;
   }
 }
 
