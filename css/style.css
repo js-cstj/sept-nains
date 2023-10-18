@@ -100,6 +100,12 @@ body {
   left: 36.7%;
   top: 41.7%;
 }
+#dormeur.petit {
+  --taille: 50;
+}
+#dormeur.grand {
+  --taille: 200;
+}
 
 #grincheux {
   --taille: 152;
