@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+#plateau {
+    position: relative;
+    max-width: 100%;
+    width: 100vmin;
+    aspect-ratio: 1 / 1;
+    background-color: hsl(300, 100%, 90%);
+    background-image: url(../images/motif_floral_04141.svg);
+    margin: 0 auto;
+    overflow: hidden;
+
+    .texte {
+        font-size: 30vmin;
+        font-family: 'Luckiest Guy', cursive;
+        text-align: center;
+        color: hsl(300, 100%, 85%);
+        line-height: .9;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-shadow: .1rem .1rem .1rem #fff8, -.1rem -.1rem .1rem #0004;
+    }
+}
+
+.nain {
+    --zoom: 18;
+    height: calc(var(--taille) * var(--zoom) * .01%);
+    position: absolute;
+    transition: .5s;
+    filter: drop-shadow(5px 5px 5px hsl(300, 0%, 0%, .2));
+}
+
+#atchoum {
+    --taille: 152;
+    left: 1.7%;
+    top: 70%;
+    // animation-name: atchoum;
+    animation-duration: 1s;
+}
+
+#dormeur {
+    --taille: 120;
+    left: 36.7%;
+    top: 41.7%;
+    &.petit {
+        --taille: 50;
+    }
+    &.grand {
+        --taille: 200;
+    }
+}
+
+#grincheux {
+    --taille: 152;
+    left: 75%;
+    top: 71.7%
+}
+
+#joyeux {
+    --taille: 152;
+    left: 8.333333%;
+    top: 26.7%
+}
+
+#prof {
+    --taille: 168;
+    left: 38.333333%;
+    top: 3.333333%
+}
+
+#simplet {
+    --taille: 136;
+    left: 28.333333%;
+    top: 73.333333%
+}
+
+#timide {
+    --taille: 153;
+    left: 70%;
+    top: 26.7%
+}

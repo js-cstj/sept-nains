@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#joyeux {
+  animation-name: aller;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes aller {
+  0% {
+    transform: translate(0px, 0px) rotate(0);
+  }
+  100% {
+    transform: translate(60px, 30px) rotate(50deg);
+  }
+}
+@keyframes sauter {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -1em;
+  }
+}
+@keyframes atchoum {
+  0% {
+    transform: translate(0px, 0px) rotateY(0deg);
+  }
+  50% {
+    transform: translate(-150px, 0px) rotateY(720deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotateY(720deg);
+  }
+}
+body {
+  background-color: hsl(300, 100%, 20%);
+  background-image: repeating-linear-gradient(rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 5px, rgba(0, 0, 0, 0.0666666667) 5px, rgba(0, 0, 0, 0.0666666667) 10px);
+}
+
+#plateau {
+  position: relative;
+  max-width: 100%;
+  width: 100vmin;
+  aspect-ratio: 1/1;
+  background-color: hsl(300, 100%, 90%);
+  background-image: url(../images/motif_floral_04141.svg);
+  margin: 0 auto;
+  overflow: hidden;
+}
+#plateau .texte {
+  font-size: 30vmin;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  color: hsl(300, 100%, 85%);
+  line-height: 0.9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5333333333), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.2666666667);
+}
+
+.nain {
+  --zoom: 18;
+  height: calc(var(--taille) * var(--zoom) * 0.01%);
+  position: absolute;
+  transition: 0.5s;
+  filter: drop-shadow(5px 5px 5px hsla(300, 0%, 0%, 0.2));
+}
+
+#atchoum {
+  --taille: 152;
+  left: 1.7%;
+  top: 70%;
+  animation-duration: 1s;
+}
+
+#dormeur {
+  --taille: 120;
+  left: 36.7%;
+  top: 41.7%;
+}
+#dormeur.petit {
+  --taille: 50;
+}
+#dormeur.grand {
+  --taille: 200;
+}
+
+#grincheux {
+  --taille: 152;
+  left: 75%;
+  top: 71.7%;
+}
+
+#joyeux {
+  --taille: 152;
+  left: 8.333333%;
+  top: 26.7%;
+}
+
+#prof {
+  --taille: 168;
+  left: 38.333333%;
+  top: 3.333333%;
+}
+
+#simplet {
+  --taille: 136;
+  left: 28.333333%;
+  top: 73.333333%;
+}
+
+#timide {
+  --taille: 153;
+  left: 70%;
+  top: 26.7%;
+}

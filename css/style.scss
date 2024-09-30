@@ -1,0 +1,56 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#joyeux {
+    animation-name: aller;
+    animation-duration: 1000ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: ease-in-out;
+    // animation-timing-function: cubic-bezier(.5, -1, .5, 2);
+}
+@keyframes aller {
+    0% {
+        transform: translate(0px, 0px) rotate(0);
+    }
+    100% {
+        transform: translate(60px, 30px) rotate(50deg);
+    }
+}
+
+@keyframes sauter {
+    0% {
+        margin-top: 0;
+
+    }
+    100% {
+        margin-top: -1em;
+    }
+}
+
+@keyframes atchoum {
+    0% {
+        transform:translate(0px,0px) rotateY(0deg);
+    }
+    50% {
+        transform:translate(-150px,0px) rotateY(720deg);
+    }
+    100% {
+        transform:translate(0px,0px) rotateY(720deg);
+    }
+}
+
+body {
+    background-color: hsl(300, 100%, 20%);
+	background-image: repeating-linear-gradient(#0000 0px,#0000 5px, #0001 5px, #0001 10px);
+
+}
+@import "plateau";
